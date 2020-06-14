@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Метод Гаусса</title>
+    <meta name="viewport" content="width=device-width">
+    <meta author="Бармин Александр">
+    <meta discription="Нахождение обратной матрицы к исходной путем последовательных исключений (Гаусса).">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="work wow fadeIn" data-wow-delay="1s">
+            <h1>Задача 2. Нахождение обратной матрицы к исходной путем
+                последовательных исключений (Гаусса).
+            </h1>
+            <h3>Составляется таблица из двух частей: в левой части записывается исходная матрица; в правой части
+                единичная, путем преобразований
+                аналогичных преобразованиям задачи №1. В левой части получают единичную матрицу, а
+            </h3>
+            <br>
+            <br>
+            <h4>*Замечание: <br>
+                - разрешающий элемент берется только на главной диагонали<br>
+                -переставлять строки нельзя.<br>
+            </h4>
+            <div class="work-place">
+                <p class="title">Весь алгоритм довольно короткий (всего 150 строк кода) и
+                    должен работать на любой обратимой по матрице (если ошибка, Вас предупредят). Введите вашу матрицу
+                    ниже,
+                    чтобы
+                    увидеть
+                    результат вычисления обратной матрциы. Каждая строка - это строка вашей матрицы. Колонны
+                    могут быть разделены запятыми, точками с запятой, пробелами </p>
+
+                <p><textarea id="input-matrix"></textarea></p>
+
+                <p><button id="btn-compute">Найти!</button></p>
+
+                <table id="output">
+                    <tbody>
+                        <tr>
+                            <td>ы</td>
+                            <td>ы</td>
+                            <td>ы</td>
+                        </tr>
+                        <tr>
+                            <td>ы</td>
+                            <td>ы</td>
+                            <td>ы</td>
+                        </tr>
+                        <tr>
+                            <td>ы</td>
+                            <td>ы</td>
+                            <td>ы</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
